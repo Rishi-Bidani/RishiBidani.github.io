@@ -1,0 +1,82 @@
+:root {
+    --space-cadet: #2d3047ff;
+    --maize-crayola: #e8c547ff;
+    --powder-blue: #a0cfd3ff;
+    --cool-grey: #8d94baff;
+    --mountbatten-pink: #9a7aa0ff;
+
+    /* Palette 2 */
+    --black: #0b0014;
+    --off-white: #f5e9e2;
+    --peach: #e3b5a4;
+    --red: #d44d5c;
+    --maroon: #773344;
+}
+
+@font-face {
+    font-family: "kgblankspace";
+    src: url("../fonts/KGBlankSpace/KGBlankSpaceSketch.ttf");
+}
+
+@font-face {
+    font-family: "kgbrokenvessel";
+    src: url("../fonts/kimberly-geswein_kg-broken-vessels-sketch/KGBrokenVesselsSketch.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: var(--space-cadet); */
+    background-color: var(--black);
+}
+
+.title {
+    font-family: "kgblankspace";
+    font-size: 2rem;
+    color: var(--peach);
+}
+
+.main-title {
+    font-family: "kgbrokenvessel";
+    font-size: 3.5rem;
+    color: var(--maize-crayola);
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.section-title {
+    margin: 1rem auto;
+    color: var(--peach);
+}
+
+.section > .main-title {
+    margin: auto;
+}
+
+.button {
+    text-decoration: none;
+    font-family: "kgbrokenvessel";
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--maize-crayola);
+    width: 5rem;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: var(--maroon);
+    border-radius: 0.5rem;
+}
+
+.button:hover {
+    box-shadow: 0 0 5px 1px var(--red);
+}

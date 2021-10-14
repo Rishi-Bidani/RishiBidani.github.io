@@ -1,0 +1,70 @@
+:root {
+    --card-border-radius: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    place-items: center;
+}
+
+.card-container {
+    margin: 2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.card {
+    height: 20rem;
+    width: 15rem;
+    background-color: var(--maroon);
+    border-radius: var(--card-border-radius);
+    color: var(--off-white);
+    display: flex;
+    flex-flow: column;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 9px 1px var(--red);
+}
+
+.card-title {
+    height: 2rem;
+    width: 100%;
+    background-color: var(--red);
+    border-radius: var(--card-border-radius);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    padding: 0.5rem;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.card-footer {
+    height: 2rem;
+    width: 100%;
+    background-color: var(--red);
+    border-radius: var(--card-border-radius);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 90%;
+    }
+}
