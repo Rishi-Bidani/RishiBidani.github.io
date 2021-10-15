@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: "kgbrokenvessel";
-    src: url("../fonts/kimberly-geswein_kg-broken-vessels-sketch/KGBrokenVesselsSketch.ttf");
+    src: url("../fonts/kgbrokenvessel/KGBrokenVesselsSketch.ttf");
 }
 
 * {
@@ -30,13 +30,12 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px !important;
+    font-size: 18px;
 }
 
 body {
     /* background-color: var(--space-cadet); */
     background-color: var(--black);
-    font-size: 16px !important;
 }
 
 .title {
