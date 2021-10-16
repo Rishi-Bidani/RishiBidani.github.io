@@ -1,0 +1,13 @@
+svg {
+    width: 2rem;
+    animation: starRotate 3s linear infinite;
+}
+
+@keyframes starRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

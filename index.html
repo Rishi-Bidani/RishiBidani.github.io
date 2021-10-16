@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/icon.css">
     <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/star.css">
     <!-- JS -->
     <script type="module" src="./js/myJS.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -27,14 +28,14 @@
     </header>
     <main class="container">
         <hr>
-        <div class="inline-flex-aboutme">
+        <section class="inline-flex-aboutme">
             <img src="./assets/kisuke.svg" alt="My-Svg-Kisuke-Urahara" class="kisuke">
             <div class="text-block">
-                <h1>Hi, I'm Rishi ! <img src="./assets/blob-wave.gif" alt="" class="blob-wave"></h1>
+                <h1>Hi, I'm Rishi! <img src="./assets/blob-wave.gif" alt="" class="blob-wave"></h1>
                 <br>
                 <p>
                     I'm a second year student at <strong class="mark">Monash University</strong> -
-                    Studying software Engineering
+                    Studying Software Engineering
                 </p>
                 <br>
                 <p>
@@ -44,27 +45,90 @@
                 <br>
                 <p>
                     Currently, I have some experience in Fullstack Web development, using NodeJS
-                    backend,
-                    I am also familiar with python-flask
+                    backend, I am also familiar with Python-flask
                 </p>
 
             </div>
-        </div>
+        </section>
         <hr>
         <h1 class="title">Technologies-Languages I have Used</h1>
-        <div class="techstack" data-aos="flip-up">
+        <section class="techstack" data-aos="flip-up">
             <img src="./assets/icons8-javascript.svg" alt="" class="techstack-item"
                  title="JavaScript">
             <img src="./assets/icons8-html-5.svg" alt="" class="techstack-item" title="HTML5">
             <img src="./assets/icons8-css3.svg" alt="" class="techstack-item" title="CSS3">
             <img src="./assets/icons8-vue-js.svg" alt="" class="techstack-item" title="VueJS">
             <img src="./assets/nodejs.png" alt="" class="techstack-item" title="NodeJS">
+            <img src="./assets/icons8-python.svg" alt="" class="techstack-item" title="Python">
             <img src="./assets/icons8-golang.svg" alt="" class="techstack-item" title="Golang">
-        </div>
+            <img src="./assets/icons8-postgresql.svg" alt="" class="techstack-item"
+                 title="PostgreSQL">
+        </section>
 
         <hr>
         <h1 class="title">Some of my Projects</h1>
-
+        <section class="projects-container">
+            <div class="card" data-link="https://github.com/Rishi-Bidani/CloudSync">
+                <div class="card-title">
+                    Cloud Sync
+                    <div class="spacer"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+                         x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
+                         xml:space="preserve" id="star-svg">
+                        <polygon fill="#FBC02D" stroke="#FBC02D" stroke-width="37.6152"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-miterlimit="10"
+                                 points="  259.216,29.942 330.27,173.919 489.16,197.007 374.185,309.08 401.33,467.31 259.216,392.612 117.104,467.31 144.25,309.08   29.274,197.007 188.165,173.919 " />
+                    </svg>
+                    4
+                </div>
+                <div class="card-body">
+                    This program will allow you to host your own cloud. It will let you to watch a
+                    folder on your computer and upload those files directly to the cloud. The goal
+                    is to create something similar to google drive's desktop client
+                </div>
+                <div class="inline">
+                    <img src="./assets/icons8-javascript.svg" alt="" class="tech-item"
+                         title="JavaScript">
+                    <img src="./assets/icons8-html-5.svg" alt="" class="tech-item" title="HTML5">
+                    <img src="./assets/icons8-css3.svg" alt="" class="tech-item" title="CSS3">
+                    <img src="./assets/icons8-vue-js.svg" alt="" class="tech-item" title="VueJS">
+                    <img src="./assets/nodejs.png" alt="" class="tech-item" title="NodeJS">
+                    <img src="./assets/icons8-golang.svg" alt="" class="tech-item" title="Golang">
+                </div>
+            </div>
+            <div class="card" data-link="">
+                <div class="card-title">
+                    Local Cloud
+                    <div class="spacer"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+                         x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
+                         xml:space="preserve" id="star-svg">
+                        <polygon fill="#FBC02D" stroke="#FBC02D" stroke-width="37.6152"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-miterlimit="10"
+                                 points="  259.216,29.942 330.27,173.919 489.16,197.007 374.185,309.08 401.33,467.31 259.216,392.612 117.104,467.31 144.25,309.08   29.274,197.007 188.165,173.919 " />
+                    </svg>
+                    61
+                </div>
+                <div class="card-body">
+                    Using this program you can convert any computer into a home server for
+                    sharing files across all your devices- connected on the same network. Sinc
+                    this hosts a website locally it is therefore platform independent.
+                </div>
+                <div class="inline">
+                    <img src="./assets/icons8-javascript.svg" alt="" class="tech-item"
+                         title="JavaScript">
+                    <img src="./assets/icons8-html-5.svg" alt="" class="tech-item" title="HTML5">
+                    <img src="./assets/icons8-css3.svg" alt="" class="tech-item" title="CSS3">
+                    <img src="./assets/icons8-vue-js.svg" alt="" class="tech-item" title="VueJS">
+                    <img src="./assets/nodejs.png" alt="" class="tech-item" title="NodeJS">
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
     <script>
         AOS.init()
