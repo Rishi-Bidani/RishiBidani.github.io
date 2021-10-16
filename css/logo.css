@@ -1,0 +1,30 @@
+.logo {
+    background-color: var(--space-cadet);
+    padding: 0.5rem;
+    height: fit-content;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.logo:hover {
+    background-color: var(--powder-blue);
+}
+
+.logo-item {
+    height: clamp(2rem, 10vw, 3.5rem);
+}
+
+.techstack-item {
+    height: 4rem;
+    padding: 1rem;
+    background-color: var(--space-cadet);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    transition-duration: 1.2s;
+    transition-property: transform;
+}
+
+.techstack-item:hover {
+    background-color: var(--powder-blue);
+    transform: rotate(360deg);
+}

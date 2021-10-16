@@ -36,48 +36,93 @@ html {
 body {
     /* background-color: var(--space-cadet); */
     background-color: var(--black);
+    padding: 0 10vh;
 }
 
 .title {
     font-family: "kgblankspace";
     font-size: 2rem;
     color: var(--peach);
+    padding: 2.5rem 0;
 }
 
 .main-title {
     font-family: "kgbrokenvessel";
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 10vw, 3.5rem);
     color: var(--maize-crayola);
 }
 
-.section {
-    height: 100vh;
+header,
+main {
     display: flex;
     flex-flow: column;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.section-title {
-    margin: 1rem auto;
-    color: var(--peach);
-}
-
-.section > .main-title {
-    margin: auto;
-}
-
-.button {
-    text-decoration: none;
-    font-family: "kgbrokenvessel";
-    font-size: 2rem;
-    font-weight: bolder;
-    color: var(--maize-crayola);
-    width: 5rem;
-    margin: 1rem auto;
+.flex-center {
     text-align: center;
-    background-color: var(--maroon);
-    border-radius: 0.5rem;
+    justify-content: space-around;
 }
 
-.button:hover {
-    box-shadow: 0 0 5px 1px var(--red);
+.inline {
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.inline-flex-aboutme {
+    display: inline-flex;
+}
+
+.kisuke {
+    height: 30rem;
+}
+
+.text-block {
+    height: fit-content;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5% 2rem;
+}
+
+p {
+    word-break: break-word;
+}
+
+.mark {
+    color: yellowgreen;
+}
+
+.blob-wave {
+    height: 2rem;
+}
+
+.techstack {
+    margin: 3rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .kisuke {
+        height: 10rem;
+        justify-self: center;
+        width: 100%;
+    }
+    .inline-flex-aboutme {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 0;
+    }
+    main {
+        width: 90%;
+    }
+
+    .text-block {
+        width: 100%;
+    }
 }

@@ -9,94 +9,64 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/logo.css">
     <!-- JS -->
-    <script type="module" src="./js/links.js"></script>
+    <script type="module" src="./js/myJS.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <div class="section">
-        <h1 class="main-title">
-            Rishi Bidani
-        </h1>
-        <a href="#section2" class="button">⬇</a>
-    </div>
-    <div class="section" id="section2">
-        <h1 class="section-title title">Projects</h1>
-        <article class="grid card-container">
-            <!-- Card 1 -->
-            <div class="card" data-link="https://github.com/Rishi-Bidani/CloudSync" data-id="1" data-aos="fade-up">
-                <div class="card-title">Cloud Sync</div>
-                <div class="card-body">
-                    <div class="card-body-content">
-                        This program will allow you to host your own cloud. It will let you to watch a folder on your computer and upload those files
-                        directly to the cloud. The goal is to create something similar to google drive's desktop client
-                    </div>
-                    <br>
-                    <div class="card-body-content">
-                        <div class="icon-flex">
-                            <span class="icon">
-                                <img src="./assets/vue.png" alt="Vue-Logo">| Vue
-                            </span>
-                            <span class="icon">
-                                <img src="./assets/html5.png" alt="Html5-Logo">| HTML5
-                            </span>
-                            <span class="icon">
-                                <img src="./assets/css.png" alt="CSS3-Logo">| CSS3
-                            </span>
-                            <span class="icon">
-                                <img src="./assets/nodejs.png" alt="CSS3-Logo">| NodeJS
-                            </span>
-                            <span class="icon">
-                                <img src="./assets/golang.png" alt="CSS3-Logo">| Golang
-                            </span>
-                        </div>
-                    </div>
+    <header>
+        <div class="inline flex-center">
+            <div class="main-title">Rishi Bidani</div>
+            <span class="logo">
+                <img src="./assets/icons8-github.svg" alt="github" class="logo-item"
+                     data-link="https://github.com/">
+            </span>
+        </div>
+    </header>
+    <main class="container">
+        <hr>
+        <div class="inline-flex-aboutme">
+            <img src="./assets/kisuke.svg" alt="My-Svg-Kisuke-Urahara" class="kisuke">
+            <div class="text-block">
+                <h1>Hi, I'm Rishi ! <img src="./assets/blob-wave.gif" alt="" class="blob-wave"></h1>
+                <br>
+                <p>
+                    I'm a second year student at <strong class="mark">Monash University</strong> -
+                    Studying software Engineering
+                </p>
+                <br>
+                <p>
+                    I graduated from <strong class="mark">Delhi Public School, Gurgaon</strong> in
+                    2020, and started working on several projects during the Covid-19 lockdown.
+                </p>
+                <br>
+                <p>
+                    Currently, I have some experience in Fullstack Web development, using NodeJS
+                    backend,
+                    I am also familiar with python-flask
+                </p>
 
-                </div>
-                <div class="card-footer">⭐stars 4</div>
             </div>
-            <!-- Card 2 -->
-            <div class="card" class="card" data-link="https://github.com/Rishi-Bidani/local-cloud" data-id="2" data-aos="fade-up">
-                <div class="card-title">Local Cloud</div>
-                <div class="card-body">
-                    <div class="card-body-content">
-                        Using this program you can convert any computer into a home server for sharing
-                        files across all your devices - connected on the same network. Since this hosts
-                        a website locally it is therefore platform independent.
-                    </div>
-                    <br>
-                    <div class="card-body-content">
-                        <div class="icon-flex">
-                            <span class="icon">
-                                <img src="./assets/vue.png" alt="Vue-Logo">| Vue
-                            </span>
-                            <span class="icon">
-                                <img src="./assets/html5.png" alt="Html5-Logo">| HTML5
-                            </span>
-                            <span class="icon">
-                                <img src="./assets/css.png" alt="CSS3-Logo">| CSS3
-                            </span>
-                            <span class="icon">
-                                <img src="./assets/nodejs.png" alt="CSS3-Logo">| NodeJS
-                            </span>
-                        </div>
-                    </div>
+        </div>
+        <hr>
+        <h1 class="title">Technologies-Languages I have Used</h1>
+        <div class="techstack">
+            <img src="./assets/icons8-javascript.svg" alt="" class="techstack-item"
+                 title="JavaScript">
+            <img src="./assets/icons8-html-5.svg" alt="" class="techstack-item" title="HTML5">
+            <img src="./assets/icons8-css3.svg" alt="" class="techstack-item" title="CSS3">
+            <img src="./assets/icons8-vue-js.svg" alt="" class="techstack-item" title="VueJS">
+            <img src="./assets/nodejs.png" alt="" class="techstack-item" title="NodeJS">
+            <img src="./assets/icons8-golang.svg" alt="" class="techstack-item" title="Golang">
+        </div>
 
+        <hr>
+        <h1 class="title">Some of my Projects</h1>
 
-                </div>
-                <div class="card-footer">⭐stars 61</div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card" data-aos="fade-up">
-                <div class="card-title"></div>
-                <div class="card-body"></div>
-            </div>
-        </article>
-    </div>
-    <script>
-        AOS.init();
-    </script>
+    </main>
+
 </body>
 
 </html>
