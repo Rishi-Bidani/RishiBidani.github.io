@@ -14,6 +14,12 @@
     height: clamp(2rem, 10vw, 3.5rem);
 }
 
+@media screen and (max-width: 800px) {
+    .logo {
+        padding: 0.2rem;
+    }
+}
+
 .techstack-item {
     height: 4rem;
     padding: 1rem;
